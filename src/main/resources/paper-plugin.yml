@@ -1,0 +1,5 @@
+name: FixImage
+version: '0.1'
+main: me.ybbbno.fiximage.FixImage
+api-version: '1.21'
+authors: [ Ybbb ]
