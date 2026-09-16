@@ -1,13 +1,14 @@
 package me.ybbbno.fiximage;
 
-import org.bukkit.plugin.java.JavaPlugin;
+import me.deadybbb.ybmj.PluginProvider;
 
-public final class FixImage extends JavaPlugin {
+public final class FixImage extends PluginProvider {
 
     @Override
     public void onEnable() {
         // Plugin startup logic
 
+        getServer().getPluginManager().registerEvents(new FixImageListener(this), this);
     }
 
     @Override
